@@ -17,15 +17,17 @@ To use the breast cancer prediction model, follow the steps below:
 git clone https://github.com/your-username/breast-cancer-prediction.git
 ```
 2. Install the required dependencies: :package::
-```pip install -r requirements.txt```
-3. Run the Flask web application: :computer::
+```
+pip install -r requirements.txt
+```
+4. Run the Flask web application: :computer::
 
 
-4. Open your web browser and visit `http://localhost:5000` to access the prediction interface.
+5. Open your web browser and visit `http://localhost:5000` to access the prediction interface.
 
-5. Enter the required measurement data in the provided form and submit it.
+6. Enter the required measurement data in the provided form and submit it.
 
-6. The model will process the input and display the predicted result, indicating whether the tumor is cancerous or non-cancerous.
+7. The model will process the input and display the predicted result, indicating whether the tumor is cancerous or non-cancerous.
 
 Feel free to modify the `app.py` file and the HTML templates in the `templates` directory to customize the user interface or incorporate additional functionality.
 
