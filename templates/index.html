@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>BreastGuard</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        section {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div>
+        <div class="bg-cover bg-center bg-pink-300" >
+            <nav>
+                <div class="container mx-auto max-w-6xl py-6 px-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-pink-800 text-2xl font-bold">BreastGuard.io </a>
+                        <ul class="hidden md:flex space-x-4">
+                            <li class="inline-block">
+                                <a href="#"
+                                    class="text-white hover:text-pink-900 transition duration-200">Home</a>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#about"
+                                    class="text-white hover:text-pink-900 transition duration-200">About</a>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#contact"
+                                    class="text-white hover:text-pink-900 transition duration-200">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="md:hidden">
+                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden-menu  hidden md:hidden lg:hidden md:block bg-blue-500 text-white text-center pt-4">
+                        <li class="py-2">
+                            <a href="#about" class="block hover:text-pink-800 transition duration-200">About</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#contact" class="block hover:text-pink-800 transition duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+        <section class="bg-cover bg-center bg-blue-500 flex items-center"
+            style="background-image: url('/static/bgpink.png');">
+            <div class="container mx-auto max-w-5xl px-4">
+                <div class="flex flex-col md:flex-row md:justify-between gap-7 p-2 text-center md:text-left">
+                    <div class="md:mt-32">
+                        <h1 class="text-4xl text-pink-700 font-bold mb-4">Breast Health Analyzer</h1>
+                        <p class="text-xl text-pink-800 mb-8">Predict the possibility of having breast cancer</p>
+                        <a href="#user-input"
+                            class="bg-white text-pink-500 px-6 py-3 rounded-full font-semibold hover:bg-pink-100 transition duration-200">Get
+                            Started</a>
+                    </div>
+                    <div>
+                        <img src="/static/heroImage.png" alt="Prevent Breast cancer" class="mx-auto md:mx-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="about" class="py-16 flex items-center">
+            <div class="items-center mx-auto">
+                <div class=" p-8 rounded-xl container mx-auto max-w-5xl px-4 text-center">
+                    <h2 class="text-3xl text-gray-800 font-semibold mb-8">About Us</h2>
+                    <p class="text-xl text-gray-600 mb-6">Breast Health Analyzer utilizes advanced machine learning
+                        models
+                        to predict the possibilities of breast cancer based on measurement data. We have used
+                        state-of-the-art data modeling techniques to achieve an accuracy of 97%. Simply input your tumor
+                        measurements, and our model will provide you with a prediction.</p>
+                    <p class="text-xl text-gray-600">We Team of four, on the battle against breast cancer Join Us ! </p>
+                </div>
+                <div class="container mx-auto max-w-5xl px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="p-8 rounded-xl text-center bg-white">
+                            <img src="/static/profileMale.png" alt="Profile 1" class="mx-auto w-32 h-32 rounded-full mb-4">
+                            <h3 class="text-xl text-gray-800 font-semibold">Kaustubh</h3>
+                            <p class="text-gray-600">M.Tech Software Engineering,<br> VIT Vellore.</p>
+                        </div>
+                        <div class="p-8 rounded-xl text-center bg-white">
+                            <img src="/static/profileFemale.png" alt="Profile 2" class="mx-auto w-32 h-32 rounded-full mb-4">
+                            <h3 class="text-xl text-gray-800 font-semibold">GnanaVarshitha</h3>
+                            <p class="text-gray-600">M.Tech Software Engineering,<br> VIT Vellore.</p>
+                        </div>
+                        <div class="p-8 rounded-xl text-center bg-white">
+                            <img src="/static/profileFemale.png" alt="Profile 3" class="mx-auto w-32 h-32 rounded-full mb-4">
+                            <h3 class="text-xl text-gray-800 font-semibold">Swathi</h3>
+                            <p class="text-gray-600">M.Tech Software Engineering,<br> VIT Vellore.</p>
+                        </div>
+                        <div class="p-8 rounded-xl text-center bg-white">
+                            <img src="/static/profileMale.png" alt="Profile 4" class="mx-auto w-32 h-32 rounded-full mb-4">
+                            <h3 class="text-xl text-gray-800 font-semibold">Pawan</h3>
+                            <p class="text-gray-600">M.Tech Software Engineering,<br> VIT Vellore.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <section id="user-input" class="bg-pink-300 py-16 flex items-center">
+            <div class="container text-center mx-auto max-w-5xl px-4">
+                <h2 class="text-3xl text-gray-800 font-semibold mb-8">Enter Your Tumor Measurements</h2>
+                <p class="text-xl text-gray-600 mb-6">To get accurate predictions, please provide your breast tumor measurements using the guidelines provided.</p>
+
+                <form action="{{url_for('submit')}}" method="POST">
+              
+                <p>
+                <input class = "p-2 rounded-lg" placeholder="Radius mean" type="text" name="rm" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Radius se" type="text" name="rs"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Radius worst" type="text" name="rw"  /> 
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg" placeholder="Texture mean" type="text" name="tm" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Texture se" type="text" name="ts"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Texture worst" type="text" name="tw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg"placeholder="Perimeter mean" type="text" name="pm"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Perimter se" type="text" name="ps"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Perimter worst" type="text" name="pw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg "placeholder="Area mean" type="text" name="am" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg "placeholder="Area se" type="text" name="as"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg "placeholder="Area worst" type="text" name="aw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg"  placeholder="Smoothness mean" type="text" name="sm"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Smoothness se" type="text" name="ss"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Smoothness worst" type="text" name="sw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg" placeholder="Compactness mean" type="text" name="com"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Compactness se" type="text" name="cos"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Compactness worst" type="text" name="cow"  />
+                </p><br>
+                
+                <p>
+                <input class="p-2 rounded-lg"  placeholder="Concavity mean" type="text" name="cvm"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class="p-2 rounded-lg" placeholder="Concavity se" type="text" name="cvs"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class="p-2 rounded-lg" placeholder="Concavity worst" type="text" name="cvw"  />
+                </p><br>
+                
+                <p>
+                <input class="p-2 rounded-lg" placeholder="Concave points mean" type="text" name="cpm"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class="p-2 rounded-lg" placeholder="Concave points se" type="text" name="cps"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class="p-2 rounded-lg" placeholder="Concave points worst" type="text" name="cpw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg" placeholder="Symmetry mean" type="text" name="sym"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Symmetry se" type="text" name="sys"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Symmetry worst" type="text" name="syw"  />
+                </p><br>
+                
+                <p>
+                <input class = "p-2 rounded-lg" placeholder="Fractal dimension mean" type="text" name="fdm"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Fractal dimension se" type="text" name="fds"  /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input class = "p-2 rounded-lg" placeholder="Fractal dimension worst" type="text" name="fdw"  />
+                </p><br>
+               <button type="submit"
+                   class="bg-pink-900 text-white px-6 py-3 my-6 rounded-full font-semibold hover:bg-pink-600 transition duration-200">Submit</button>
+               <!--<button style="border: 1px solid black" type="submit"  class="btn"><b>SUBMIT</button>-->
+               
+                <br>
+               
+                </form>
+                <br>
+                <h1 class="text-3xl text-gray-800 font-semibold mb-8">{{ y }}</h1>
+                <br>
+                
+                
+            </div>
+        </section>
+
+
+
+        <div id="contact" class="py-20 flex items-center">
+            <div class="container mx-auto max-w-7xl px-4">
+                <div class="text-center">
+                    <h2 class="text-3xl text-gray-800 font-semibold mb-8">Contact Us</h2>
+                    <p class="text-xl text-gray-600 mb-8">Have any questions? Reach out to us for more details.</p>
+                    <a href="mailto:breastgaurd@gmail.com"
+                        class="bg-pink-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition duration-200">Email
+                        Us</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function processData() {
+            var postData = document.getElementById("data").value.trim();
+
+            if (postData === "") {
+                alert("Please enter data.");
+                return;
+            }
+
+            var lines = postData.split('\n');
+            var header = lines[0].split('\t');
+            var values = lines[1].split('\t');
+
+            var data = Object.fromEntries(header.map((key, index) => [key, values[index]]));
+
+            console.log(data);
+
+        }
+
+        const button = document.querySelector('button');
+        const ul = document.querySelector('.hidden');
+
+        button.addEventListener('click', () => {
+            ul.classList.toggle('hidden');
+        });
+
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            processData();
+        });
+    </script>
+
+</body>
+
+</html>
